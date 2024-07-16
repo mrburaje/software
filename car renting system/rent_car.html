@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rent a Car</title>
+</head>
+<body>
+    <h1>Rent a Car</h1>
+    <form method="POST">
+        <label for="cust_id">Customer ID:</label><br>
+        <input type="text" id="cust_id" name="cust_id"><br>
+        <label for="number_of_cars">Number of Cars:</label><br>
+        <input type="text" id="number_of_cars" name="number_of_cars"><br>
+        <label for="carType">Car Type (1: Sedan, 2: SUV, 3: Convertible, 4: Minivan):</label><br>
+        <input type="text" id="carType" name="carType"><br>
+        <label for="rentType">Rent Type (1: Hourly, 2: Daily, 3: Weekly):</label><br>
+        <input type="text" id="rentType" name="rentType"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>
